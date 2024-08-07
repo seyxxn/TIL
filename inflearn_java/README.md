@@ -9,6 +9,6 @@
 | ---- |  ------ | ----- | 
 | 김영한의 자바 입문 - 코드로 시작하는 자바 첫걸음 |  [java-start](https://github.com/seyxxn/TIL/tree/main/inflearn_java/java-start) |  ✅ |
 | 김영한의 실전 자바 - 기본편 |  [java-basic](https://github.com/seyxxn/TIL/tree/main/inflearn_java/java-basic)      |  ✅  |
-| 김영한의 실전 자바 - 중급 1편 |       |       |
+| 김영한의 실전 자바 - 중급 1편 | [java-mid1](https://github.com/seyxxn/TIL/tree/main/inflearn_java/java-mid1)    |   🏃    |
 | 김영한의 실전 자바 - 중급 2편 |       |     |
 | 김영한의 실전 자바 - 고급 1편, 멀티스레드와 동시성 |    |      |
