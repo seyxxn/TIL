@@ -10,7 +10,7 @@ public class Library {
     }
 
     // Book 클래스는 Library 내부에서만 사용, 외부로 노출하면 안됨
-    private class Book {
+    private static class Book {
         private String title; // 도서 제목
         private String author; // 저자명
 
@@ -21,21 +21,21 @@ public class Library {
     }
 
     public void addBook(String title, String author) {
-        if (cnt < books.length){
-            Book book = new Book(title, author);
-            books[cnt++] = book;
-
-        }else{
-            System.out.println("도서관 저장 공간이 부족합니다");
+        // 검증 로직을 다 처리하고
+        if (cnt >= books.length){
+            System.out.println("도서관 저장 공간이 부족합니다.");
             return;
         }
+
+        // 정상 로직을 처리
+        books[cnt++] = new Book(title, author);
     }
 
 
     public void showBooks() {
         System.out.println("== 책 목록 출력 ==");
-        for (Book book : books) {
-            System.out.println("도서 제목: " + book.title + ", 저자: " + book.author);
+        for (int i = 0; i < cnt; i++){
+            System.out.println("도서 제목: " + books[i].title + ", 저자: " + books[i].author);
         }
     }
 
